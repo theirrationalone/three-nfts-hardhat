@@ -47,7 +47,7 @@ contract BasicNFT is ERC721 {
     /// MUTATIONAL FUNCTIONS ///
     ///////////////////////////
     function mintNFT() public {
-        _mint(msg.sender, s_tokenCounter);
+        _safeMint(msg.sender, s_tokenCounter);
         emit NFTMinted(msg.sender, s_tokenCounter);
         s_tokenCounter += 1;
     }
