@@ -76,9 +76,9 @@ npx hardhat run scripts/DynamicSvgNFT.js --network goerli
 ```shell
 npx hardhat node
 npx hardhat test --network localhost
-npx hardhat run scripts/BasicNFT.js
-npx hardhat run scripts/RandomIpfsNFT.js
-npx hardhat run scripts/DynamicSvgNFT.js
+npx hardhat run scripts/BasicNFT.js --network localhost
+npx hardhat run scripts/RandomIpfsNFT.js  --network localhost
+npx hardhat run scripts/DynamicSvgNFT.js  --network localhost
 ```
 
 <br />
